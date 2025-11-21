@@ -18,13 +18,83 @@ Gather whatever customer intelligence you have:
 - LinkedIn profiles of your best customers
 - Competitive intel on who your rivals are targeting
 
-I have created a Claude Artifact Survey to collect this data from my clients. [Check it out](https://claude.ai/public/artifacts/1cc968a7-f72a-4401-860b-e77eb49df75f)
-
 The better your inputs, the sharper your personas. If you're pre-revenue, lean on founder insights, industry research, and interviews with people who match your target profile.
+
+## Prepare your inputs
+
+Fill out this form before running the prompt. The more specific and honest you are, the better your personas will be.
+
+### Company context
+
+**{{COMPANY_NAME}}**  
+Your company name
+
+**{{COMPANY_DESCRIPTION}}**  
+What do you do in 2-3 sentences? Focus on the problem you solve, not feature lists.
+
+**{{PRODUCT_SERVICE_OVERVIEW}}**  
+What are you selling? What problems does it solve?
+
+**{{CURRENT_POSITIONING}}**  
+How do you describe your category or market position today?
+
+**{{PRICE_POINT_MODEL}}**  
+What's your pricing structure? This helps identify buyer authority levels (e.g., $5K/year vs. $100K/year changes who signs off)
+
+**{{TARGET_COMPANY_SIZE}}**  
+Employee count and/or revenue range of your ideal customers
+
+**{{TARGET_INDUSTRIES}}**  
+Which verticals or sectors do you serve best?
+
+**{{GEOGRAPHIC_FOCUS}}**  
+Where are your customers located?
+
+### Customer intelligence
+
+**{{EXISTING_CUSTOMER_DATA}}**  
+Names, titles, and companies of your best 5-10 customers (helps identify patterns)
+
+**{{WIN_THEMES}}**  
+Why did recent customers choose you? Pull from sales notes, close-won reports, or customer interviews.
+
+**{{LOSS_THEMES}}**  
+Why did prospects choose competitors or not buy at all? Be honest—this reveals gaps.
+
+**{{COMMON_PAIN_POINTS}}**  
+What problems do prospects mention most often?
+
+**{{BUYING_TRIGGERS}}**  
+What events prompt people to start looking for solutions like yours? (new regulation, funding round, leadership change, system failure, team growth, etc.)
+
+**{{STAKEHOLDER_MAP}}**  
+Who gets involved in deals? List all the titles, departments, and roles you typically encounter in the buying process.
+
+**{{SALES_CYCLE_INSIGHTS}}**  
+How long do deals take? What slows them down? What accelerates them?
+
+**{{CUSTOMER_QUOTES}}**  
+Any verbatim language from customers about their challenges or your value? Pull from Gong, sales calls, or reviews.
+
+### Specific requirements
+
+**{{NUMBER_OF_PERSONAS}}**  
+How many do you want? (3-5 recommended)
+
+**{{PRIORITY_SEGMENTS}}**  
+Any specific roles, departments, or industries to focus on?
+
+**{{EXCLUSIONS}}**  
+Any audiences you explicitly don't serve?
+
+**{{KNOWN_GAPS}}**  
+Any customer types you struggle to reach or understand?
+
+**Pro tip:** Don't leave these sections blank. Even if you're pre-revenue, you can fill these with hypotheses based on founder experience, competitive research, or industry knowledge. Just label them as assumptions you'll validate.
 
 ## The prompt
 
-Copy everything below this line and paste it into your LLM. Fill in your specific context where indicated.
+Copy everything below this line and paste it into your LLM. Fill in your prepared inputs where indicated.
 
 ---
 ```
@@ -115,17 +185,35 @@ Map their needs and behaviors across:
 - Highlight differences between personas to guide segmentation
 - Ensure each persona has clear implications for GTM strategy
 
-## Context about our company
+## Client context
 
-[Paste your company description, product/service details, and any relevant market positioning here]
+[Paste all your prepared inputs here]
 
-## Customer intelligence inputs
+### Company context
+- Company name: {{COMPANY_NAME}}
+- Company description: {{COMPANY_DESCRIPTION}}
+- Product/service overview: {{PRODUCT_SERVICE_OVERVIEW}}
+- Current positioning: {{CURRENT_POSITIONING}}
+- Price point/model: {{PRICE_POINT_MODEL}}
+- Target company size: {{TARGET_COMPANY_SIZE}}
+- Target industries: {{TARGET_INDUSTRIES}}
+- Geographic focus: {{GEOGRAPHIC_FOCUS}}
 
-[Paste any research, interview notes, sales insights, or customer data you have here]
+### Customer intelligence
+- Existing customer data: {{EXISTING_CUSTOMER_DATA}}
+- Win themes: {{WIN_THEMES}}
+- Loss themes: {{LOSS_THEMES}}
+- Common pain points: {{COMMON_PAIN_POINTS}}
+- Buying triggers: {{BUYING_TRIGGERS}}
+- Stakeholder map: {{STAKEHOLDER_MAP}}
+- Sales cycle insights: {{SALES_CYCLE_INSIGHTS}}
+- Customer quotes: {{CUSTOMER_QUOTES}}
 
-## Specific instructions
-
-[Add any additional requirements: number of personas, priority segments, industries to focus on, etc.]
+### Specific requirements
+- Number of personas: {{NUMBER_OF_PERSONAS}}
+- Priority segments: {{PRIORITY_SEGMENTS}}
+- Exclusions: {{EXCLUSIONS}}
+- Known gaps: {{KNOWN_GAPS}}
 ```
 
 ---
