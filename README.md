@@ -1,4 +1,4 @@
-# foundry
+# Saren's Marketing Foundry
 
 The essential prompt matrix for building B2B marketing infrastructure from scratch.
 
