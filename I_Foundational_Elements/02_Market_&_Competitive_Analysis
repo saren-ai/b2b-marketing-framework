@@ -18,35 +18,33 @@ This prompt works best when you feed it real competitive intelligence, not guess
 - Competitor websites, pricing pages, and case studies
 - Customer feedback about alternatives they considered
 
-I've created a Claude Artifact to collect answers from my clients. [Try it now](https://claude.ai/public/artifacts/c4481802-41fa-4853-8ff6-da71112dbf56)
-
 If you're early-stage, lean on founder experience, investor conversations, and whatever you can scrape from competitor positioning and customer reviews.
 
 ## Prepare your inputs
 
-Fill out this form before running the prompt. Copy it into a doc, complete each section, then paste your answers into the prompt template below.
+Fill out this form before running the prompt. The more specific you are, the sharper the output.
 
-### Company basics
+### Company profile
 
 **{{COMPANY_NAME}}**  
 Your company name
 
 **{{PRODUCT_SERVICE_DESCRIPTION}}**  
-Brief description of what you sell (2-3 sentences). Focus on the problem you solve, not feature lists.
+What you sell in 2-3 sentences—focus on the problem you solve, not feature lists
 
 **{{TARGET_MARKET_SEGMENTS}}**  
-Who do you sell to? Include industries, company sizes, and specific roles.
+Who buys from you? Include industries, company sizes, specific roles.
 
 **{{COMPANY_SIZE_STAGE}}**  
 Where are you? Choose one: Startup / Growth-stage / Established Enterprise
 
-### Competitive landscape
+### Competitive intelligence
 
 **{{PRIMARY_COMPETITORS}}**  
-List 3-5 companies you compete with most frequently. Include their names and a one-line description if they're not well-known.
+List 3-5 companies you compete with most often in deals. Include their names and a one-line description if they're not well-known.
 
 **{{SECONDARY_COMPETITORS}}**  
-Any emerging or adjacent competitors to watch. These might not be direct competitors today but could be threats tomorrow.
+Emerging or adjacent competitors on your radar. These might not be direct competitors today but could be threats tomorrow.
 
 **{{WIN_REASONS}}**  
 Why do you typically win deals? Be specific: features, service quality, pricing model, relationships, faster implementation, better support, etc. Pull from sales notes or customer interviews.
@@ -55,15 +53,15 @@ Why do you typically win deals? Be specific: features, service quality, pricing 
 Why do you typically lose deals? Be honest: feature gaps, pricing concerns, brand perception, implementation complexity, lack of integrations, etc.
 
 **{{COMPARISON_CRITERIA}}**  
-What factors do prospects use to evaluate vendors? Examples: ease of integration, security certifications, customization options, price, support response time, scalability, user experience, etc.
+What dimensions do prospects use to evaluate vendors? Examples: ease of integration, security certifications, customization options, price, support response time, scalability, user experience, etc.
 
 **{{COMPETITOR_WEAKNESSES}}**  
-What specific vulnerabilities do you know about in competitor offerings? Examples: poor customer service, outdated technology, complex pricing, limited integrations, weak mobile experience, slow innovation pace, etc.
+Known vulnerabilities in competitor offerings, positioning, or go-to-market strategy. Examples: poor customer service, outdated technology, complex pricing, limited integrations, weak mobile experience, slow innovation pace, etc.
 
-### Market intelligence
+### Market dynamics
 
 **{{RECENT_MARKET_SHIFTS}}**  
-Any significant industry changes in the last 12-18 months? Think: new regulations, buyer behavior changes, economic factors, consolidation, funding environment shifts, remote work impacts, etc.
+Any significant industry changes in the last 12-18 months that impact how you compete. Think: new regulations, buyer behavior changes, economic factors, consolidation, funding environment shifts, remote work impacts, etc.
 
 **{{EMERGING_COMPETITORS}}**  
 New entrants or companies expanding into your space. Include startups that just raised funding or adjacent players moving into your category.
@@ -71,10 +69,10 @@ New entrants or companies expanding into your space. Include startups that just 
 **{{TECHNOLOGY_TRENDS}}**  
 Relevant tech developments impacting your market. Examples: AI adoption, automation trends, platform shifts, API-first architectures, no-code movement, data privacy regulations, etc.
 
-### Strategic context
+### Strategic boundaries
 
 **{{IDEAL_CUSTOMER_PROFILE}}**  
-Describe your best-fit customer: company size, industry, use case, pain points, tech stack, buying process. Reference your Target Customer Profiles if you've already created them.
+Who is your best-fit customer? Include company size, industry, use case, pain points, tech stack, buying process. Reference your Target Customer Profiles if you've already created them.
 
 **{{DEALS_TO_AVOID}}**  
 Red flags or deal types that historically haven't worked out. Examples: companies under 50 employees, organizations without dedicated IT teams, prospects requiring custom development, price-sensitive buyers in certain verticals, etc.
@@ -228,15 +226,15 @@ Use markdown formatting with clear headers, tables, and bullet points for scanna
 
 ## Client context
 
-[Paste all your prepared inputs here, organized by section]
+[Paste all your prepared inputs here]
 
-### Company basics
+### Company profile
 - Company name: {{COMPANY_NAME}}
 - Product/service: {{PRODUCT_SERVICE_DESCRIPTION}}
 - Target market: {{TARGET_MARKET_SEGMENTS}}
 - Company stage: {{COMPANY_SIZE_STAGE}}
 
-### Competitive landscape
+### Competitive intelligence
 - Primary competitors: {{PRIMARY_COMPETITORS}}
 - Secondary competitors: {{SECONDARY_COMPETITORS}}
 - Why we win: {{WIN_REASONS}}
@@ -244,12 +242,12 @@ Use markdown formatting with clear headers, tables, and bullet points for scanna
 - Evaluation criteria: {{COMPARISON_CRITERIA}}
 - Competitor weaknesses: {{COMPETITOR_WEAKNESSES}}
 
-### Market intelligence
+### Market dynamics
 - Recent market shifts: {{RECENT_MARKET_SHIFTS}}
 - Emerging competitors: {{EMERGING_COMPETITORS}}
 - Technology trends: {{TECHNOLOGY_TRENDS}}
 
-### Strategic context
+### Strategic boundaries
 - Ideal customer profile: {{IDEAL_CUSTOMER_PROFILE}}
 - Deals to avoid: {{DEALS_TO_AVOID}}
 
