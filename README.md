@@ -11,8 +11,9 @@ Built for early-stage teams who need to move fast but can't afford to build on q
 ## What's inside
 
 ### I. Foundational elements
-- **Target customer profiles** — who you're selling to (and who you're ignoring)
-- **Market & competitive analysis** — where you fit in the landscape
+- **Target customer profiles** — who you're selling to (and who you're ignoring) [Claude Artifact](https://claude.ai/public/artifacts/1cc968a7-f72a-4401-860b-e77eb49df75f)
+
+- **Market & competitive analysis** — where you fit in the landscape [Claude Artifact](https://claude.ai/public/artifacts/c4481802-41fa-4853-8ff6-da71112dbf56)
 
 ### II. Core identity
 - **Mission, vision, values** — why you exist beyond revenue
